@@ -177,7 +177,7 @@ func Test_pkgDir(t *testing.T) {
 				}
 			}
 
-			dir, rPath, err := interp.pkgDir(goPath, test.root, test.path)
+			dir, rPath, err := interp.pkgDir(goPath, test.root)
 			if err != nil {
 				t.Fatal(err)
 			}
